@@ -3,7 +3,9 @@
 echo "Welcome to the Screen match!\n";
 
 $movieName =  "Top Gun - Maverick";
-$releaseYear = 2022;
+// data entry
+$releaseYear = $argv[1] ?? 2022;
+
 //aggregation operators
 $scoreSum = 9;
 $scoreSum += 5;
@@ -23,3 +25,4 @@ $includeInThePlan = $prime || $releaseYear < 2020;
 // string manipulation
 echo "Movie: ". $movieName . "\n";
 echo "Score: $movieScore\n";
+echo "Release Year: $releaseYear\n";
