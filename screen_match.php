@@ -3,6 +3,8 @@
 echo "Welcome to the Screen match!\n";
 
 $movieName =  "Top Gun - Maverick";
+$movieName =  "Iron Man";
+$movieName =  "Halloween";
 // data entry
 $releaseYear = $argv[1] ?? 2022;
 
@@ -34,3 +36,12 @@ if ($releaseYear < 2020) {
 else{
     echo "This movie is new!\n";
 }
+
+$genre = match ($movieName) {
+    "Top Gun - Maverick" => "Action",
+    "Iron Man" => "Superhero",
+    "Halloween" => "Horror",
+    default => "Unknown",
+};
+
+echo "Genre: $genre\n";
