@@ -1,7 +1,6 @@
 <?php
 
-echo "Welcome to the Screen match!
-";
+echo "Welcome to the Screen match!\n";
 
 $movieName =  "Top Gun - Maverick";
 $releaseYear = 2022;
@@ -13,7 +12,7 @@ $scoreSum += 7.8;
 $scoreSum += 8;
 
 
-$movieScore = $scoreSum/5;
+$movieScore = $scoreSum / 5;
 
 $prime = true;
 
@@ -21,4 +20,6 @@ $prime = true;
 //logic operators
 $includeInThePlan = $prime || $releaseYear < 2020;
 
-echo $movieName;
+// string manipulation
+echo "Movie: ". $movieName . "\n";
+echo "Score: $movieScore\n";
