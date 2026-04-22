@@ -26,3 +26,11 @@ $includeInThePlan = $prime || $releaseYear < 2020;
 echo "Movie: ". $movieName . "\n";
 echo "Score: $movieScore\n";
 echo "Release Year: $releaseYear\n";
+
+if ($releaseYear < 2020) {
+    echo "This movie is a classic!\n";
+} elseif ($releaseYear >= 2020 && $releaseYear <= 2025) 
+    echo "This movie is a recent release!\n";
+else{
+    echo "This movie is new!\n";
+}
