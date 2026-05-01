@@ -16,8 +16,14 @@ $scoreSum = 0;
 // $scoreSum += 8;
 $scoresQty = $argc - 1;
 
-for ($i = 1; $i < $argc; $i++) {
-    $scoreSum += $argv[$i];
+// for ($i = 1; $i < $argc; $i++) {
+//     $scoreSum += $argv[$i];
+// }
+
+$i = 1;
+while ($argv[$i] != 0) {
+    $scoreSum += $argv[$i++];
+
 }
 
 $movieScore = $scoreSum / $scoresQty;
