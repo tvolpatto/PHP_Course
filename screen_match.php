@@ -9,14 +9,18 @@ $movieName =  "Halloween";
 $releaseYear = $argv[1] ?? 2022;
 
 //aggregation operators
-$scoreSum = 9;
-$scoreSum += 5;
-$scoreSum += 8; 
-$scoreSum += 7.8;
-$scoreSum += 8;
+$scoreSum = 0;
+// $scoreSum += 5;
+// $scoreSum += 8; 
+// $scoreSum += 7.8;
+// $scoreSum += 8;
+$scoresQty = $argc - 1;
 
+for ($i = 1; $i < $argc; $i++) {
+    $scoreSum += $argv[$i];
+}
 
-$movieScore = $scoreSum / 5;
+$movieScore = $scoreSum / $scoresQty;
 
 $prime = true;
 
