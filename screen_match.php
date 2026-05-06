@@ -55,3 +55,8 @@ $genre = match ($movieName) {
 };
 
 echo "Genre: $genre\n";
+
+//Arrays
+//$scoresArray = array(5, 8, 7.8, 8);
+$scoresArray = [ 5, 8, 7.8, 8 ];
+
