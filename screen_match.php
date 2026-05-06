@@ -60,3 +60,10 @@ echo "Genre: $genre\n";
 //$scoresArray = array(5, 8, 7.8, 8);
 $scoresArray = [ 5, 8, 7.8, 8 ];
 
+// Associative array
+$movieDetails = [
+    "name" => $movieName,
+    "score" => $movieScore,
+    "releaseYear" => $releaseYear,
+    "genre" => $genre
+];
